@@ -1,9 +1,10 @@
 /* Variáveis CSS para facilitar a personalização */
 :root {
-    --cor-primaria: #2c3e50;
-    --cor-secundaria: #3498db;
-    --cor-fundo: #f4f7f6;
-    --cor-texto: #333;
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #169d99;
+    --cor-destaque: #ab0768; 
+    --cor-fundo: #fae894;
+    --cor-texto: #070743;
     --cor-branco: #ffffff;
 }
 
@@ -24,7 +25,7 @@ body {
    ========================================= */
 #menu-superior {
     background-color: var(--cor-primaria);
-    color: var(--cor-branco);
+    color: var(--cor-texto);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +47,7 @@ body {
 }
 
 #menu-superior nav ul li a {
-    color: var(--cor-branco);
+    color: var(--cor-texto);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -112,7 +113,7 @@ body {
 }
 
 .btn {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-destaque);
     color: var(--cor-branco);
     border: none;
     padding: 10px 20px;
@@ -167,7 +168,7 @@ body {
    ========================================= */
 footer {
     background-color: var(--cor-primaria);
-    color: var(--cor-branco);
+    color: var(--cor-texto);
     text-align: center;
     padding: 20px;
     margin-top: 40px;
