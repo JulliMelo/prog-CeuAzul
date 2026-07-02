@@ -3,7 +3,7 @@
     --cor-primaria: #ffffff;
     --cor-secundaria: #169d99;
     --cor-destaque: #ab0768; 
-    --cor-fundo: #fae894;
+    --cor-fundo: #f6e9b2;
     --cor-texto: #070743;
     --cor-branco: #ffffff;
 }
@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -58,15 +58,19 @@ body {
 }
 
 /* =========================================
-   SEÇÃO HERO
+   SEÇÃO HERO (BANNER COM IMAGEM DE BOLHAS)
    ========================================= */
 .hero {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-branco);
+    /* Buscando a imagem de bolhas que você salvou na pasta */
+    background-image: url('banner-fundo.jpg');
+    
+    background-size: cover;       /* Faz a imagem preencher todo o banner */
+    background-position: center;  /* Centraliza o efeito das bolhas */
+    background-repeat: no-repeat; /* Evita que a imagem duplique */
+    color: var(--cor-branco);     /* Mantém o texto em branco */
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px;          /* Dá uma altura legal para destacar bem o fundo */
 }
-
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -112,7 +116,23 @@ body {
     margin-bottom: 15px;
     color: var(--cor-texto);
 }
-
+/* Cole este bloco no final do seu arquivo CSS */
+.card-emoji {
+    font-size: 5.5rem; /* Aumente ou diminua esse número para mudar o tamanho */
+    display: block;    /* Faz o emoji ficar em uma linha sozinho */
+    margin-bottom: 15px; /* Cria um espaço entre o emoji e o título abaixo */
+    line-height: 1;    /* Remove espaços invisíveis em volta do emoji */
+}
+.tag-idade {
+    display: inline-block;
+    background-color: #fff4cc;   /* Amarelo pastel suave */
+    color: #b58200;              /* Texto num tom de ouro/castanho para dar leitura */
+    font-size: 0.85rem;          
+    font-weight: bold;
+    padding: 5px 14px;           
+    border-radius: 20px;         
+    margin-bottom: 15px;         
+}
 .btn {
     background-color: var(--cor-destaque);
     color: var(--cor-branco);
